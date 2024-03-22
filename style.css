@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rancho&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.logo {
+    font-size: 30px;
+    color: #040404;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar a{
+    font-size: 20px;
+    color: #040404;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+.navbar a:hover {
+    background: burlywood;
+    color:#fff;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #5d762e,transparent);
+    z-index: 10;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section #text  {
+    position: absolute;
+    color: burlywood;
+    font-size: 6vw;
+    text-align: right;
+    line-height: 0.55em;
+    font-family: "Protest Revolution", sans-serif;
+    transform: translateY(-10%);
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: burlywood;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+.about
+{
+    position: relative;
+    padding: 100px;
+    background: #5d762e;
+}
+.about img {
+    position: flex;
+    width: 650px;
+    height: auto;
+    float: right;
+    animation: blink 3s infinite;
+}
+.about h2
+{
+    font-size: 3.5em;
+    color: #040404;
+    margin-bottom: 10px;
+}
+.about p
+{
+    font-size: 1em;
+    color: #040404;
+}
+.experience
+{
+    position: relative;
+    padding: 100px;
+    background: #894701;  
+}
+.experience img {
+    opacity: 0.07;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.experience h2
+{
+    font-size: 3.5em;
+    color: #040404;
+    margin-bottom: 10px;
+}
+.experience p
+{
+    font-size: 1em;
+    color: #040404;
+}
+footer {
+	padding: 30px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
